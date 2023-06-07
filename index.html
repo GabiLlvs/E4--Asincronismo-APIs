@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeAPI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <section>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"
+        alt=""
+        class="pokemon-logo"
+      />
+      <div>
+        <input
+          type="number"
+          id="pokeInput"
+          min="1"
+          max="898"
+          placeholder="Ingresa un número del 1 al 898"
+          style="width: 17em"
+        />
+        <button id="searchBtn" class="btn btn-danger">Pokedex</button>
+        <div id="pokeContainer"></div>
+      </div>
+    </section>
+    <section> <div id="snackbar" class="snackbar"></div> </section>
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
